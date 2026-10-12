@@ -27,7 +27,7 @@ buttons.forEach(button =>{
             }
         
             catch(error){
-                display.value='Error';
+                display.value="Error";
             }
              return;
         }
