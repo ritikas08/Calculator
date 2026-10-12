@@ -23,7 +23,7 @@
            
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            cursor: pointer;
+            
             gap: 12px;
 
         }
@@ -36,17 +36,11 @@
             cursor:pointer;
             background-color: azure;
         }
-        /* button:hover{
+         .buttons button:hover{
             background-color: rgb(60, 65, 61);
-        } */
-
-        @media (hover:hover){
-            button:hover{
-                background-color: rgb(60,65,61);
-                color: white;
-            }
-        }
-        button:active{
+            color: white;
+        } 
+        .buttons button:active{
             background-color: rgb(80,85,81);
             transform: scale(0.95);
             transition: transform 0.1s ease;
