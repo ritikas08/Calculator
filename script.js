@@ -49,6 +49,9 @@ buttons.forEach(button => {
             }
             return;
         }
+        if (display.value === 'Error') {
+            return;
+        }
         if (buttonText === '=') {
             try {
 
@@ -59,9 +62,7 @@ buttons.forEach(button => {
             }
             return;
         }
-        if (display.value === 'Error') {
-            return;
-        }
+        
 
         display.value += buttonText;
 
