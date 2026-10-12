@@ -8,10 +8,10 @@ buttons.forEach(button =>{
 
         if(buttonText === 'C' || buttonText === 'AC'){
             display.value='';
+            return;
         }
-            else if(display.value==='Error'){
-                return;
-        else if (currentButton.classList.contains('backspace') || buttonText === '⌫') {
+           
+         if (currentButton.classList.contains('backspace') || buttonText === '⌫') {
                 if(display.value==='Error'){
                     display.value='';
                 }else{
@@ -19,9 +19,7 @@ buttons.forEach(button =>{
         }
                 return;
             }
-                if (display.value==='Error';{
-                    return;
-                }
+
          if (buttonText=== '='){
             try{
                 
@@ -31,9 +29,13 @@ buttons.forEach(button =>{
             catch(error){
                 display.value='Error';
             }
+             return;
         }
-        else{
+             if(display.value==='Error'){
+                 return;
+             }
+    
             display.value += buttonText;
-        }
+    
     });
 });
