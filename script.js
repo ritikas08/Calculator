@@ -9,10 +9,20 @@ buttons.forEach(button =>{
         if(buttonText === 'C' || buttonText === 'AC'){
             display.value='';
         }
+            else if(display.value==='Error'){
+                return;
         else if (currentButton.classList.contains('backspace') || buttonText === '⌫') {
+                if(display.value==='Error'){
+                    display.value='';
+                }else{
             display.value=display.value.slice(0,-1);
         }
-        else if (buttonText=== '='){
+                return;
+            }
+                if (display.value==='Error';{
+                    return;
+                }
+         if (buttonText=== '='){
             try{
                 
                 display.value = eval(display.value);
