@@ -9,7 +9,7 @@ buttons.forEach(button =>{
         if(buttonText === 'C' || buttonText === 'AC'){
             display.value='';
         }
-        else if (currentbutton.classList.contains('backspace') || buttonText === '⌫') {
+        else if (currentButton.classList.contains('backspace') || buttonText === '⌫') {
             display.value=display.value.slice(0,-1);
         }
         else if (buttonText=== '='){
