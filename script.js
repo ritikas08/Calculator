@@ -1,5 +1,5 @@
 const display=document.getElementById('display');
-const buttons=document.querySelectorAll('.buttons button');
+const buttons=document.querySelectorAll(' button');
 
 buttons.forEach(button =>{
     button.addEventListener('click',(e)=>{
@@ -9,7 +9,7 @@ buttons.forEach(button =>{
         if(buttonText === 'C' || buttonText === 'AC'){
             display.value='';
         }
-        else if (currentbutton.classList.contains('backspace') || button.Text === '⌫') {
+        else if (currentbutton.classList.contains('backspace') || buttonText === '⌫') {
             display.value=display.value.slice(0,-1);
         }
         else if (buttonText=== '='){
