@@ -31,7 +31,7 @@ buttons.forEach(button =>{
             }
              return;
         }
-             if(display.value==='Error'){
+             if(display.value==="Error"){
                  return;
              }
     
